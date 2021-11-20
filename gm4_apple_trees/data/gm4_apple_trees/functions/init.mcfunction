@@ -1,7 +1,6 @@
 execute unless score apple_trees gm4_modules matches 1 run data modify storage gm4:log queue append value {type:"install",module:"Apple Trees"}
 scoreboard players set apple_trees gm4_modules 1
 
-# scoreboards and constants
 scoreboard objectives add gm4_count dummy
 scoreboard objectives add gm4_apple_data dummy
 
