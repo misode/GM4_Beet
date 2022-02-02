@@ -45,7 +45,7 @@ jobs:
         run: git status
 
       - if: github.event_name == 'pull_request'
-        run: git diff ${{ github.base_ref }} --shortstat -- .
+        run: git diff origin/${{ github.base_ref }} --shortstat -- .
 
       - name: Set up Python 3.9
         uses: actions/setup-python@v2
@@ -62,7 +62,7 @@ jobs:
 
       - name: Build modules from pull request
         if: github.event_name == 'pull_request'
-        run: beet --set 'meta.pull_request_base=${{ github.base_ref }}' build
+        run: beet --set 'meta.pull_request_base=origin/${{ github.base_ref }}' build
 
       - name: Upload artifact
         if: github.event_name == 'pull_request'
