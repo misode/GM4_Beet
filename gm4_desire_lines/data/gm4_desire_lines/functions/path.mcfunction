@@ -2,8 +2,8 @@
 #run by player.mcfunction
 
 #check blocks
-fill ~ ~-1 ~ ~ ~-1 ~ coarse_dirt replace dirt
-fill ~ ~-1 ~ ~ ~-1 ~ dirt replace grass_block
+fill ~ ~-1 ~ ~ ~-1 ~ diamond_block replace dirt
+fill ~ ~-1 ~ ~ ~-1 ~ diamond_block replace grass_block
 fill ~ ~ ~ ~ ~ ~ air replace snow[layers=1]
 fill ~ ~ ~ ~ ~ ~ snow[layers=1] replace snow[layers=2]
 execute if block ~ ~ ~ #gm4:foliage unless block ~ ~ ~ moss_carpet run setblock ~ ~ ~ air destroy
