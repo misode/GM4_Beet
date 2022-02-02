@@ -41,6 +41,12 @@ jobs:
         if: github.event_name == 'pull_request'
         run: git fetch origin ${{ github.base_ref }}
 
+      - if: github.event_name == 'pull_request'
+        run: git status
+
+      - if: github.event_name == 'pull_request'
+        run: git diff ${{ github.base_ref }} --shortstat
+
       - name: Set up Python 3.9
         uses: actions/setup-python@v2
         with:
