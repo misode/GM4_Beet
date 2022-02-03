@@ -1,5 +1,5 @@
 {
-  "last_commit": "ca9265efed618c04baf268a1c6e9214a26fcf3ad",
+  "last_commit": "925042a554d79882777424bf7b9c029f75cda045",
   "modules": [
     {
       "id": "gm4_animi_shamir",
@@ -326,7 +326,7 @@
         ]
       },
       "hidden": false,
-      "patch": 18000
+      "patch": 18001
     },
     {
       "id": "gm4_cooler_caves",
