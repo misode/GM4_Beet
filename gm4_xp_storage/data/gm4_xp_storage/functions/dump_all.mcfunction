@@ -9,4 +9,4 @@ function gm4_xp_storage:dump_level
 scoreboard players add xp_dump_all_counter gm4_xp_calc 1
 
 # loop function until levels is 1
-execute if score xp_dump_all_counter gm4_xp_calc matches 1..40 unless entity @s[level=0] run function gm4_xp_storage:dump_all
+execute if score xp_dump_all_counter gm4_xp_calc matches 1..30 unless entity @s[level=0] run function gm4_xp_storage:dump_all
